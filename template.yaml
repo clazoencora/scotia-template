@@ -9,7 +9,7 @@ metadata:
     - java
     - maven
 spec:
-  owner: piomin
+  owner: clazoencora
   system: microservices
   type: service
 
