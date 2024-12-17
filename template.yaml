@@ -83,7 +83,7 @@ spec:
         allowedHosts: ['github.com']
         description: ${{ parameters.description }}
         #repoUrl: github.com?owner=${{ parameters.orgName }}&repo=${{ parameters.appName }}
-        repoUrl: ${{ parameters.repoUrl }}
+        repoUrl: github.com?owner=clazoencora&repo=scotia-demo
         defaultBranch: ${{ parameters.repoBranchName }}
         repoVisibility: public
 
