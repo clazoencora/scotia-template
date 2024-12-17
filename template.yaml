@@ -20,6 +20,7 @@ spec:
         - appName
         - domainName
         - repoBranchName
+        - repoUrl
         - groupId
         - javaPackage
         - apiPath
