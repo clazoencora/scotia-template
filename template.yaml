@@ -28,7 +28,7 @@ spec:
         orgName:
           title: Organization name
           type: string
-          default: scotia
+          default: clazoencora
         appName:
           title: App name
           type: string
@@ -77,7 +77,8 @@ spec:
       input:
         allowedHosts: ['github.com']
         description: ${{ parameters.description }}
-        repoUrl: github.com?owner=clazoencora&repo=scotia-demo
+        #repoUrl: github.com?owner=clazoencora&repo=scotia-demo
+        github.com?owner=${{ parameters.orgName }}&repo=${{ parameters.appName }}
         defaultBranch: ${{ parameters.repoBranchName }}
         repoVisibility: public
 
