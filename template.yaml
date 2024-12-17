@@ -32,15 +32,19 @@ spec:
         appName:
           title: App name
           type: string
-          default: sample-spring-boot-app
+          default: scotia-demo-app
         domainName:
           title: Name of the domain object
           type: string
           default: Person
+        repoUrl:
+          title: Url Repo name
+          type: string
+          default: https://github.com/clazoencora/scotia-demo/
         repoBranchName:
           title: Name of the branch in the Git repository
           type: string
-          default: master
+          default: development
         groupId:
           title: Maven Group ID
           type: string
@@ -77,7 +81,8 @@ spec:
       input:
         allowedHosts: ['github.com']
         description: ${{ parameters.description }}
-        repoUrl: github.com?owner=${{ parameters.orgName }}&repo=${{ parameters.appName }}
+        #repoUrl: github.com?owner=${{ parameters.orgName }}&repo=${{ parameters.appName }}
+        repoUrl: ${{ parameters.repoUrl }}
         defaultBranch: ${{ parameters.repoBranchName }}
         repoVisibility: public
 
