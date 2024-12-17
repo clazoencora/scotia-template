@@ -20,7 +20,6 @@ spec:
         - appName
         - domainName
         - repoBranchName
-        #- repoUrl
         - groupId
         - javaPackage
         - apiPath
@@ -38,10 +37,6 @@ spec:
           title: Name of the domain object
           type: string
           default: Person
-        #repoUrl:
-        #  title: Url Repo name
-        #  type: string
-        #  default: github.com/clazoencora/scotia-demo
         repoBranchName:
           title: Name of the branch in the Git repository
           type: string
@@ -82,7 +77,6 @@ spec:
       input:
         allowedHosts: ['github.com']
         description: ${{ parameters.description }}
-        #repoUrl: github.com?owner=${{ parameters.orgName }}&repo=${{ parameters.appName }}
         repoUrl: github.com?owner=clazoencora&repo=scotia-demo
         defaultBranch: ${{ parameters.repoBranchName }}
         repoVisibility: public
